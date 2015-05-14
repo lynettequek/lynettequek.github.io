@@ -84,8 +84,6 @@ oscillator.connect(audioContext.destination);
 **computedFrequency**
 
 - both `frequency` and `detune` are `a-rate` parameters, used together to determine a `computedFrequency` value
-- 
-
     `computedFrequenxy(t) = frequency(t) * pow(2, detune(t) / 1200)`
     `numberOfInputs : 1`
     `numberOfOutputs : 1`
