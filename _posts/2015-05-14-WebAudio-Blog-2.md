@@ -67,10 +67,8 @@ oscillator.connect(audioContext.destination);
 - frequency of periodic waveform in Hz
 - default value is 440
 - `a-rate` AudioParm
-
 - also operates in the `BiquadFilterNode`, in Hz
-- default value is 350Hz
-- ranges from 10Hz to half the Nyquist frequency
+
 
 *Nyquist Frequency*
 
@@ -88,9 +86,9 @@ oscillator.connect(audioContext.destination);
 - both `frequency` and `detune` are `a-rate` parameters, used together to determine a `computedFrequency` value
 - 
 ```
-computedFrequenxy(t) = frequency(t) * pow(2, detune(t) / 1200)
-numberOfInputs : 1
-numberOfOutputs : 1
+`computedFrequenxy(t) = frequency(t) * pow(2, detune(t) / 1200)`
+`numberOfInputs : 1`
+`numberOfOutputs : 1`
 
 channelCountMode = "max";
 channelInterpretation = "speakers";
@@ -99,6 +97,8 @@ channelInterpretation = "speakers";
 **BiquadFilterNode:**
 
 - INFORMATION
+- `frequency` default value is 350Hz
+- `frequency` ranges from 10Hz to half the Nyquist frequency
 
 
 LINKS:
