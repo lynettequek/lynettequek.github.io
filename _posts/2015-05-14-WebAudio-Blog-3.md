@@ -51,8 +51,23 @@ gainNode.connect(audioContext.destination);
 - `peaking`: Frequencies inside the range get a boost or attenuation
 - `allpass`: lets all frequencies through, changes phase-relationship between various frequencies
 
+**Parameter Automation**
+
+- define a mapping from time to value
+- adds a new event into the list of a type specific to the method
+- kept in time-order in the list
+- new event will replace previous event of same type, if not it'll be placed in the list after the previous
+- `setValueAtTime()` - SetValue
+- `linearRampToValueAtTime()` - LinearRampToValue
+- `exponentialRampToValueAtTime()` - ExponentialRampToValue
+- `setTargetAtTime()` - SetTarget
+- `setValueCurveAtTime()` - SetValueCurve
+
+**Wet/Dry Connections**
+CONTINUE!!!
 
 LINKS:
 
 - [BiquadFilterNode](https://docs.webplatform.org/wiki/apis/webaudio/BiquadFilterNode)
 - [Parameters](https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode)
+- [Parameter Automation](http://webaudio.github.io/web-audio-api/#audioparam-automation-example)
