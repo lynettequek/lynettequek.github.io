@@ -78,7 +78,6 @@ oscillator.connect(audioContext.destination);
 - default value is 440
 - also operates in the `BiquadFilterNode`, in Hz, `k-rate`
 
-
 *Nyquist Frequency*
 
 - half the sample-rate of a discrete signal processing system
@@ -93,13 +92,17 @@ oscillator.connect(audioContext.destination);
 - default value is 0
 - ranges from -1200 to 1200
 
-
 **computedFrequency**
 
 - both `frequency` and `detune` are `a-rate` parameters, used together to determine a `computedFrequency` value
 
 **One-Shot behaviour**
 
+- a sound or short audio clip
+- uses the `AudioBuffer` interface
+- used in drum machines, sequencers and 3D games etc
+- can be played using oscillators (in the form of notes or tunes)
+- `AudioBufferSourceNodes`: create a node, attach a buffer, set loop boolean value, connect to a node on the graph that will lead to destination, call noteOn or noteGrainOn, and noteOff
 
 **BiquadFilterNode:**
 
@@ -107,10 +110,11 @@ oscillator.connect(audioContext.destination);
 - `frequency` default value is 350Hz
 - `frequency` ranges from 10Hz to half the Nyquist frequency
 
-
 LINKS:
 
 - [WebAudio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
 - [AudioParam](https://developer.mozilla.org/en-US/docs/Web/API/AudioParam)
 - [oscillatorNode Interface](http://webaudio.github.io/web-audio-api/#the-oscillatornode-interface)
-- 
+- [Playing musical notes on the web](http://blog.chrislowis.co.uk/2013/06/05/playing-notes-web-audio-api.html)
+- [One-shot audio in games - Field Runners](http://www.html5rocks.com/en/tutorials/webaudio/fieldrunners/)
+- [WebAudio Summary](https://docs.webplatform.org/wiki/apis/webaudio)
