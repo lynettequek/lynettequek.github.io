@@ -104,12 +104,6 @@ oscillator.connect(audioContext.destination);
 - can be played using oscillators (in the form of notes or tunes)
 - `AudioBufferSourceNodes`: create a node, attach a buffer, set loop boolean value, connect to a node on the graph that will lead to destination, call noteOn or noteGrainOn, and noteOff
 
-**BiquadFilterNode:**
-
-- INFORMATION
-- `frequency` default value is 350Hz
-- `frequency` ranges from 10Hz to half the Nyquist frequency
-
 LINKS:
 
 - [WebAudio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
