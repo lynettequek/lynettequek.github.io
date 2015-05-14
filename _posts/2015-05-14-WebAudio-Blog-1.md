@@ -4,7 +4,7 @@ title: 1. Getting started with WebAudio
 date: 2015-05-14
 ---
 
-Definitions
+<strong>Definitions</strong>
 
 API: Application Programming Interface.
 - a set of routines, protocols, and tools for building software applications
