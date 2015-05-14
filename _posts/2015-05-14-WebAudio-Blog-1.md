@@ -41,19 +41,15 @@ var audioContext = new AudioContext()
 - Performs basic audio operations
 - Linked via inputs and outputs chain
 - Contains effects eg. Filters, Reverb, Delay
-
-- *Audio Sources Nodes*
-- 
+- *Audio Sources Nodes*:
 ```
 OscillatorNode, AudioBuffer, AudioBufferSourceNode, MediaElecmentAudioSourceNode, MediaStreamAudioSourceNode
 ```
-- *Audio Effects Nodes*
-- 
+- *Audio Effects Nodes*:
 ```
 BiquadFilterNode, ConvolverNode, DelayNode, DynamicsCompressorNode, GainNode, StereoPannerNode, WaveShaperNode, PeriodicWave
 ```
-- *Audio Destinations*
-- 
+- *Audio Destinations*:
 ```
 AudioDestinationNode, MediaStreamAudioDestinationNode
 ```
