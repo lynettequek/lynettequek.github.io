@@ -72,6 +72,10 @@ var audioContext = new AudioContext();
 var mySampleRate = audioContext.sampleRate;
 ```
 
+**Audio NodeGraph**: connected AudioNodes in a given AudioContext creates an audio routhing graph.
+
+- represents an audio-processing graph built from linked AudioNodes
+- houses the chain of AudioNodes
 
 LINKS:
 - [HTML Audio Tag](http://www.w3schools.com/htmL/html5_audio.asp)
