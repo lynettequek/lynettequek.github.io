@@ -26,6 +26,7 @@ date: 2015-05-14
 - AudioContext connects sound sources to the sound destination
 - Only needed once for each audio application created
 - Contains AudioNodes
+
 ```
 var audioContext = new AudioContext()
 ```
