@@ -15,6 +15,7 @@ date: 2015-05-14
 - Provides a standard for playing audio files
 - Important methods: load(), play(), pause()
 - Important attributes: autoplay, controls, loop, muted, preload, src
+- 
 ```
 < audio> 
 ```
