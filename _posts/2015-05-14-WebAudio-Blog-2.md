@@ -78,10 +78,6 @@ oscillator.connect(audioContext.destination);
 - default value is 440
 - also operates in the `BiquadFilterNode`, in Hz, `k-rate`
 
-*Nyquist Frequency*
-
-- half the sample-rate of a discrete signal processing system
-
 **Attribute 2:** `detune`
 
 - `a-rate`:
