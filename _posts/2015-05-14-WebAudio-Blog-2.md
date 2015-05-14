@@ -43,6 +43,15 @@ etc.
 - emits sound at time specified by `start()`
 
 
+**OscillatorType**
+
+- Sine: a sine wave
+- Square: a square wave of duty period 0.5
+- Sawtooth: a sawtooth wave
+- Triangle: a triangle wave
+- Custom: a custom periodic wave
+
+
 **Output of AudioNodes**
 
 - default output is device speakers
@@ -64,10 +73,10 @@ oscillator.connect(audioContext.destination);
 
 **Attribute 1:** `frequency`
 
+- `a-rate` AudioParm
 - frequency of periodic waveform in Hz
 - default value is 440
-- `a-rate` AudioParm
-- also operates in the `BiquadFilterNode`, in Hz
+- also operates in the `BiquadFilterNode`, in Hz, `k-rate`
 
 
 *Nyquist Frequency*
@@ -76,20 +85,20 @@ oscillator.connect(audioContext.destination);
 
 **Attribute 2:** `detune`
 
+- `a-rate`:
+- a detuning value (in Cents) which will offset the `frequency` by the given amount
+- default value is 0
+- `k-rate`:
 - parameter to modulate the speed at which the audio stream is rendered
 - default value is 0
 - ranges from -1200 to 1200
-- 
+
 
 **computedFrequency**
 
 - both `frequency` and `detune` are `a-rate` parameters, used together to determine a `computedFrequency` value
-    `computedFrequenxy(t) = frequency(t) * pow(2, detune(t) / 1200)`
-    `numberOfInputs : 1`
-    `numberOfOutputs : 1`
 
-    `channelCountMode = "max";`
-    `channelInterpretation = "speakers";`
+**One-Shot behaviour**
 
 
 **BiquadFilterNode:**
@@ -103,4 +112,5 @@ LINKS:
 
 - [WebAudio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
 - [AudioParam](https://developer.mozilla.org/en-US/docs/Web/API/AudioParam)
+- [oscillatorNode Interface](http://webaudio.github.io/web-audio-api/#the-oscillatornode-interface)
 - 
