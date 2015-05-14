@@ -30,6 +30,7 @@ tag specifies a standard way to embed audio in a web page
 - AudioContext connects sound sources to the sound destination
 - Only needed once for each audio application created
 - Contains AudioNodes
+- 
 ```
 var audioContext = new AudioContext()
 ```
