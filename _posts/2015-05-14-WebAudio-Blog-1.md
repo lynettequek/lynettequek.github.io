@@ -16,11 +16,11 @@ date: 2015-05-14
 - important attributes: autoplay, controls, loop, muted, preload, src
 	
 
-**JavaScript**: a dynamic programming language, object-oriented, commonly used to create interactive effects within web browsers
+**JavaScript**: a dynamic programming language, object-oriented, commonly used to create interactive effects within web browsers.
 - embedded in HTML, within <script> tags
 
 **AudioContext**:
 
 LINKS:
-[http://www.w3schools.com/htmL/html5_audio.asp]
+[HTML Audio Tag](http://www.w3schools.com/htmL/html5_audio.asp)
 
