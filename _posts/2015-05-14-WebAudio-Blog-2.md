@@ -54,10 +54,9 @@ oscillator = audioContext.createOscillator();
 - default output is device speakers
 - 
 ```
-var audioContext = new AudioContext()
-
-var oscillator = audioContext.createOscillator()
-oscillator.connect(audioContext.destination)
+var audioContext = new AudioContext();
+var oscillator = audioContext.createOscillator();
+oscillator.connect(audioContext.destination);
 ```
 
 LINKS:
