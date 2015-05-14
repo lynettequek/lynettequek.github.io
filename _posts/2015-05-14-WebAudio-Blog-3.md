@@ -28,6 +28,9 @@ gainNode.connect(audioContext.destination);
 - `frequency` default value is 350Hz
 - `frequency` ranges from 10Hz to half the Nyquist frequency
 
+*Nyquist Frequency*
+
+- half the sample-rate of a discrete signal processing system
 
 LINKS:
 
