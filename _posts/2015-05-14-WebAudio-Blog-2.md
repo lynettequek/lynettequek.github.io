@@ -39,6 +39,8 @@ etc.
 **OscillatorNode**
 
 - `oscillator = audioContext.createOscillator();`
+- represents an audio source generating a periodic waveform
+- emits sound at time specified by `start()`
 
 
 **Output of AudioNodes**
@@ -51,7 +53,25 @@ var oscillator = audioContext.createOscillator();
 oscillator.connect(audioContext.destination);
 ```
 
+**Parameters**
+
+- AudioParam interface: an audio-related parameter, usually a parameter of an AudioNode
+- a list of events
+- can be set to a specific value or change in value, scheduled to happen at a specific time and following a specific pattern
+- two kinds of AudioParam: a-rate and k-rate parameters
+- `a-rate AudioParam` takes the current audio parameter value for each sample frame of the audio signal
+- `k-rate AudioParam` uses the same initial audio parameter value for the whole block processed (128 sample frames)
+
+**Attribute 1** `frequency`
+
+**Attribute 2** `detune`
+
+- parameter to modulate the speed at which the audio stream is rendered
+- default value is 0
+- ranges from -1200 to 1200
+
 LINKS:
 
 - [WebAudio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
+- [AudioParam](https://developer.mozilla.org/en-US/docs/Web/API/AudioParam)
 - 
