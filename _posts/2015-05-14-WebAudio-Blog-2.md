@@ -25,27 +25,19 @@ AudioDestinationNode, MediaStreamAudioDestinationNode
 
 - first create AudioContext to build the audio graph (linkage of AudioNodes)
 - provide versions for different browsers 
-- 
-```
-var audioContext = new AudioContext();
-or 
-var audioContext = new (window.AudioContext || window.webkitAudioContext)();
-```
+- `var audioContext = new AudioContext();` or `var audioContext = new (window.AudioContext || window.webkitAudioContext)();`
 - connecting nodes together: the node that you want to connect is given as the argument of the connect method
 - eg:
-```
-source = audioContext.createMediaStreamSource(stream);
-source.connect(analyser);
-analyser.connect(distortion);
-distortion.connect(biquadFilter);
-etc.
-```
 
+    source = audioContext.createMediaStreamSource(stream);
+    source.connect(analyser);
+    analyser.connect(distortion);
+    distortion.connect(biquadFilter);
+etc.
 
 **OscillatorNode**
 
-- 
-`oscillator = audioContext.createOscillator();`
+- `oscillator = audioContext.createOscillator();`
 
 
 **Output of AudioNodes**
