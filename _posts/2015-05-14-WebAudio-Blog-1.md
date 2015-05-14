@@ -58,8 +58,25 @@ BiquadFilterNode, ConvolverNode, DelayNode, DynamicsCompressorNode, GainNode, St
 AudioDestinationNode, MediaStreamAudioDestinationNode
 ```
 
+**SampleRate**: Number of samples of audio carried per second (Hz / kHz)
+- 
+```
+AudioContext.sampleRate
+```
+returns a floating point number representing sample rate used by ALL nodes
+- Sample-rate of an AudioContext cannot be changed
+- Sample-rate convertors are not supported
+- 
+```
+var audioContext = new AudioContext();
+var mySampleRate = audioContext.sampleRate;
+```
+
+
 LINKS:
 - [HTML Audio Tag](http://www.w3schools.com/htmL/html5_audio.asp)
 - [AudioContext](http://www.html5rocks.com/en/tutorials/webaudio/intro/)
 - [WebAudio Interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
+- [Sample Rate 1](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext)
+- [Sample Rate 2](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/sampleRate)
 
