@@ -16,8 +16,9 @@ date: 2015-05-14
 - Important methods: load(), play(), pause()
 - Important attributes: autoplay, controls, loop, muted, preload, src
 ```
-< audio> tag specifies a standard way to embed audio in a web page
+< audio> 
 ```
+tag specifies a standard way to embed audio in a web page
 
 **JavaScript**: A dynamic programming language, object-oriented, commonly used to create interactive effects within web browsers.
 
