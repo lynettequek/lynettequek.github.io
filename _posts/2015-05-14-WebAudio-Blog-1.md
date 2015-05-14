@@ -7,6 +7,7 @@ date: 2015-05-14
 **Definitions**
 
 **API**: Application Programming Interface.
+
 - A set of routines, protocols, and tools for building software applications
 
 **HTML**: HyperText Markup Language.
