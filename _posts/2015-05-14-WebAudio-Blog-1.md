@@ -59,7 +59,8 @@ AudioDestinationNode, MediaStreamAudioDestinationNode
 ```
 
 **SampleRate**: Number of samples of audio carried per second (Hz / kHz)
-- 
+
+-
 ```
 AudioContext.sampleRate
 ```
