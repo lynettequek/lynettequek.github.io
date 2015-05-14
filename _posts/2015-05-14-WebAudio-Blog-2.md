@@ -62,13 +62,25 @@ oscillator.connect(audioContext.destination);
 - `a-rate AudioParam` takes the current audio parameter value for each sample frame of the audio signal
 - `k-rate AudioParam` uses the same initial audio parameter value for the whole block processed (128 sample frames)
 
-**Attribute 1** `frequency`
+**Attribute 1:** `frequency`
 
-**Attribute 2** `detune`
+- operates in the `BiquadFilterNode`, in Hz
+- default value is 350Hz
+- ranges from 10Hz to half the Nyquist frequency
+- 
+
+** *Nyquist Frequency* **
+
+- half the sample-rate
+
+**Attribute 2:** `detune`
 
 - parameter to modulate the speed at which the audio stream is rendered
 - default value is 0
 - ranges from -1200 to 1200
+- 
+
+**BiquadFilterNode:**
 
 LINKS:
 
