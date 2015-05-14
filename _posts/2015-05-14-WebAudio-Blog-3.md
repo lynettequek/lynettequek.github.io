@@ -21,6 +21,7 @@ gainNode.connect(audioContext.destination);
 - audio processing module
 - low-order filter
 - created using `AudioContext.createBiquadFilter()`
+- connected via `biquadFilter.connect(audioContext.destination);`
 - base for tone controls (bass, mid, treble), graphic equalizers and advanced filters
 - can be combined to form complex filters
 - default filter is lowpass (cutting high frequencies)
@@ -41,8 +42,14 @@ gainNode.connect(audioContext.destination);
 
 **Parameters** (type of filters)
 
-- `lowpass`: 12dB/octave roll off. Frequencies below cutoff passes through, frequencies above are attenuated
-- `highpass`: CONTINUE
+- `lowpass`: 12dB/octave rolloff. Frequencies below cutoff passes through, frequencies above are attenuated
+- `highpass`: 12dB/octave rolloff. Frequencies below cutoff are attenuated, frequencies above it pass through
+- `bandpass`: Frequencies outside the given range of frequencies are attenuated, frequencies within it pass through. Width of frequency band is adjusted by Q value. Greater Q value, smaller the frequency band
+- `notch`: opposite of `bandpass` filter. Frequencies outside the given range of frequencies pass through, frequencies within it are attenuated. Width of frequency band is adjusted by Q value as well
+- `lowshelf`: Frequenies lower than the frequency get a boost or attenuation
+- `highshelf`: Frequencies higher than the frequency get a boost or attenuation
+- `peaking`: Frequencies inside the range get a boost or attenuation
+- `allpass`: lets all frequencies through, changes phase-relationship between various frequencies
 
 
 LINKS:
