@@ -32,6 +32,7 @@ gainNode.connect(audioContext.destination);
 - half the sample-rate of a discrete signal processing system
 
 **Properties:**
+
 - `BiquadFilterNode.frequency`: k-rate AudioParam, representing a frequency in the current filtering algorithm (Hz)
 - `BiquadFilterNode.detune`: a-rate AudioParam, representing detuning of the frequency (Cents)
 - `BiquadFilterNode.Q `: k-rate AudioParam, representing a Q-factor (bandwidth - higher Q value, thinner and sharper peak. vice versa)
@@ -39,6 +40,7 @@ gainNode.connect(audioContext.destination);
 - `BiquadFilterNode.type`: string value defining the kind of filtering algorithm the node is implementing
 
 **Parameters** (type of filters)
+
 - `lowpass`: 12dB/octave roll off. Frequencies below cutoff passes through, frequencies above are attenuated
 - `highpass`: CONTINUE
 
