@@ -28,11 +28,12 @@ AudioDestinationNode, MediaStreamAudioDestinationNode
 - `var audioContext = new AudioContext();` or `var audioContext = new (window.AudioContext || window.webkitAudioContext)();`
 - connecting nodes together: the node that you want to connect is given as the argument of the connect method
 - eg:
-
-    source = audioContext.createMediaStreamSource(stream);
-    source.connect(analyser);
-    analyser.connect(distortion);
-    distortion.connect(biquadFilter);
+```
+source = audioContext.createMediaStreamSource(stream);
+source.connect(analyser);
+analyser.connect(distortion);
+distortion.connect(biquadFilter);
+```
 etc.
 
 **OscillatorNode**
