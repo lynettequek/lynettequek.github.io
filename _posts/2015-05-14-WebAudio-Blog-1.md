@@ -13,9 +13,11 @@ date: 2015-05-14
 **HTML**: HyperText Markup Language.
 
 - Provides a standard for playing audio files
-- <audio> tag specifies a standard way to embed audio in a web page
 - Important methods: load(), play(), pause()
 - Important attributes: autoplay, controls, loop, muted, preload, src
+```
+< audio> tag specifies a standard way to embed audio in a web page
+```
 
 **JavaScript**: A dynamic programming language, object-oriented, commonly used to create interactive effects within web browsers.
 
@@ -26,7 +28,6 @@ date: 2015-05-14
 - AudioContext connects sound sources to the sound destination
 - Only needed once for each audio application created
 - Contains AudioNodes
-
 ```
 var audioContext = new AudioContext()
 ```
