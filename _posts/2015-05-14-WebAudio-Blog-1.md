@@ -41,6 +41,7 @@ var audioContext = new AudioContext()
 - Performs basic audio operations
 - Linked via inputs and outputs chain
 - Contains effects eg. Filters, Reverb, Delay
+
 - *Audio Sources Nodes*
 - 
 ```
