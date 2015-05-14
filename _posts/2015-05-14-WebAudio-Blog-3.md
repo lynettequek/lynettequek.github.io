@@ -25,6 +25,8 @@ gainNode.connect(audioContext.destination);
 - base for tone controls (bass, mid, treble), graphic equalizers and advanced filters
 - can be combined to form complex filters
 - default filter is lowpass (cutting high frequencies)
+- `frequency` default value is 350Hz
+- `frequency` ranges from 10Hz to half the Nyquist frequency
 
 
 LINKS:
