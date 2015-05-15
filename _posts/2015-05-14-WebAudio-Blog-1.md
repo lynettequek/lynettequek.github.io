@@ -48,7 +48,6 @@ returns a floating point number representing sample rate used by ALL nodes
 - 
 ```
 var audioContext = new AudioContext();
-
 var mySampleRate = audioContext.sampleRate;
 ```
 
