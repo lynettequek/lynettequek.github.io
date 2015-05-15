@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3. Working with Effects (AudioNodes)
-date: 2015-05-14
+date: 2015-05-15
 ---
 **GainNode**
 
@@ -63,11 +63,18 @@ gainNode.connect(audioContext.destination);
 - `setTargetAtTime()` - SetTarget
 - `setValueCurveAtTime()` - SetValueCurve
 
-**Wet/Dry Connections**
-CONTINUE!!!
+**Dry/Wet Connections**
+
+- Dry = raw
+- Wet = processed
+- goes under the `gainNode`, as it acts as an "audio mixer"
+- by creating a `masterDry` gain and a `masterWet` gain:
+- `masterDry = context.createGain();`
+- `masterWet = context.createGain();`
 
 LINKS:
 
 - [BiquadFilterNode](https://docs.webplatform.org/wiki/apis/webaudio/BiquadFilterNode)
 - [Parameters](https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode)
 - [Parameter Automation](http://webaudio.github.io/web-audio-api/#audioparam-automation-example)
+- [gainNode and Wet/Dry](http://webaudio.github.io/web-audio-api/#the-gainnode-interface)
