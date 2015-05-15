@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 4. AudioBufferSourceNode, load and decode audio files
+title: 4. Load and decode audio files (AudioBufferSourceNode)
 date: 2015-05-15
 ---
 **Loading audio files**
