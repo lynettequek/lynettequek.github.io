@@ -31,6 +31,18 @@ date: 2015-05-18
 - Web Audio Clock: `set*ValueAtTime()` methods: `linearRampToValueAtTime()`, `exponentialRampToValueAtTime()`, `setTargetAtTime()`, `setValueCurveAtTime()`, `cancelScheduledValues`
 - JavaScript Clock: `setTimeout()`, `scheduleNote()`, `nextNote()`
 
+**Synchronous vs Asynchronous**
+
+- Synchronous: happening at the same time (real-time)
+- might have conflict in timing 
+- waits for one task to finsh before moving on to another task
+- happens in a single series
+
+
+- Asynchronous: not blocking the main JavaScript execution thread
+- Happening at different times, fast-paced
+- able to move on to another task before the previous one finishes
+- different routines able to run in background
 
 LINKS:
 
@@ -40,3 +52,4 @@ LINKS:
 - [Media (video & audio) formats codec](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats)
 - [Audio format tests](http://hpr.dogphilosophy.net/test/)
 - [A Tale of Two clocks](http://www.html5rocks.com/en/tutorials/audio/scheduling/)
+- [Synchronous vs Asynchronous](http://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean)
