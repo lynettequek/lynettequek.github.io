@@ -3,7 +3,6 @@ layout: post
 title: 5. Scheduling of events
 date: 2015-05-18
 ---
-
 **Scheduling Web Audio with precision**
 - A Tale of Two Clocks
 
