@@ -108,3 +108,4 @@ LINKS:
 - [Playing musical notes on the web](http://blog.chrislowis.co.uk/2013/06/05/playing-notes-web-audio-api.html)
 - [One-shot audio in games - Field Runners](http://www.html5rocks.com/en/tutorials/webaudio/fieldrunners/)
 - [WebAudio Summary](https://docs.webplatform.org/wiki/apis/webaudio)
+- [More info](https://developer.tizen.org/documentation/articles/advanced-web-audio-api-usage)
