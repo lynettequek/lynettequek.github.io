@@ -29,6 +29,24 @@ date: 2015-05-18
 *ArrayBuffer*
 - a generic fixed-length container for binary data (bytes)
 
+**Codec support**
+- audio coding formats supported by the `audio` element, on various browsers
+
+- Google Chrome: *ogg, vorbis, wav, pcm, mp3, aac, opus*
+- Internet Explorer: *mp3, aac*
+- Mozilla Firefox: *ogg, vorbis, wav, pcm, mp3, aac, opus*
+- Opera: *ogg, vorbis, wav, pcm, mp3, aac, opus*
+- Safari: *wav, pcm, mp3, aac*
+
+**One-shot behaviour**
+
+- an `AudioBufferSourceNode` acts one-shot, only executes once when called
+- create new one once it has been `.start()` and `.stop()`
+
 LINKS:
 
 - [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
+- [Load and decode sound files](http://www.html5rocks.com/en/tutorials/webaudio/intro/#toc-load)
+- [Audio formats codec](http://en.wikipedia.org/wiki/HTML5_Audio#Supported_audio_coding_formats)
+- [Media (video & audio) formats codec](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats)
+- [Audio format tests](http://hpr.dogphilosophy.net/test/)
