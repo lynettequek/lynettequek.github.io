@@ -38,7 +38,6 @@ date: 2015-05-18
 - waits for one task to finsh before moving on to another task
 - happens in a single series
 
-
 - Asynchronous: not blocking the main JavaScript execution thread
 - Happening at different times, fast-paced
 - able to move on to another task before the previous one finishes
