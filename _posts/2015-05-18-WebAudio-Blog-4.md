@@ -20,6 +20,7 @@ date: 2015-05-18
 - `successCallback`is invoked when decoding is finished, representing the decoded PCM audio data
 - `errorCallback` is invoked if there is an erro decoding the audio file data
 - decoded PCM audio data is represented as an `AudioBuffer`
+- asynchronously decodes the audio file
 
 **Playing sounds**
 
